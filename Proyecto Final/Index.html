@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <title>Curriculum Vitae</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="app.js"></script>
+    </head>
+    <body>  
+        <div style="text-align: center;">
+            <img src="images/foto.jpg"> 
+            <p class="nombre"><u>Monica Vaquez Soto</u></p>
+        </div>
+        <table style="width: 100%;"> 
+            <tr>
+                <th> <img src="images/calendar.png"></th>
+                <th><img src="images/map.png" width="40x" height= "40px" ></th>
+                <th> <img src="images/telefono.png" width="40px" height="40px"></th>
+                <th> <img src="images/gmail.png" width="40px" height="40px"></th>
+                <th><img src="images/citizenship.png" width="40px" height="40px"></th>
+            </tr>
+            <tr style="text-align: center;">
+                <td> 10 de Octubre de 1991</td>
+                <td> Tucuman 1585 - Capital Federal </td>
+                <td> +54 9 11 4856 8658 </td>
+                <td> monica.soto@gmail.com </td>
+                <td>Argentina</td>
+            </tr>
+        </table>
+
+        <u><h3> <img src="images/carta.png">Carta de presentacion:</h3></u>
+        <p style="font-size: small; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Enfermera experimentada con 6 años de experiencia en centros clinicos y hospitales, gestionando medicamentos, controlando sintomas y organizando historiales clinicos de los pacientes. Durante mis años de carrera he desarrollado una actitud metodica y una escucha activa, ayudando a resolver los problemas de los pacientes.</p>
+
+        <u><h3><img src="images/educacion.png" >Educacion:</h3></u>
+
+        <div class="educacion-container" >
+            <ul class="myUL">
+                <li> 2019-09 / 2014-06 Grado universitario en enfermeria-Ucm</li>
+                <li> 2008-09 / 2010-06 Grado superior en documentacion y administracion- Igs Luis Buñel</li>
+            </ul>
+        </div>
+
+        <u><h3><img src="images/inspiracion.png">Hablidades</h3></u>
+
+        <table class="estilo-tabla-habilidades center">
+            <tr>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>
+                    <label for="health" >Escucha Empatica</label>
+                </td>
+                <td>
+                    <progress min="0" max="100" value="100" id="health" ></progress>
+                </td>
+            </tr>
+            <tr>
+                <td> 
+                    <label for="health" >Trabajo en equipo</label>
+                </td>
+                <td> 
+                    <progress min="0" max="100" value="50" id="health"></progress>
+                </td>
+            </tr>
+
+            <tr>
+                <td> <label for="health">Gestion de emergencia</label></li></td>
+                <td> <progress min="0" max="100" value="70" id="health" ></progress></td>
+            </tr>
+            <tr>
+                <td><label for="health">Pensamiento analitico</label></td>
+                <td><progress min="0" max="100" value="60" id="health" ></progress></td>
+            </tr>
+            <tr>
+                <td><label for="health">Gestion de documentacion sanitaria</label></td>
+                <td> <progress min="0" max="100" value="70" id="health" ></progress></td>
+            </tr>
+        </table>
+
+        <u><h3><img src="images/educacion.png"> Idiomas </h3></u>
+
+        <table class="estilo-tabla-habilidades center">
+            <tr>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>
+                    <label for="health" >Ingles</label>
+                </td>
+                <td>
+                    <progress min="0" max="100" value="100" id="health" ></progress>
+                </td>
+            </tr>
+            <tr>
+                <td> 
+                    <label for="health" >Fraces</label>
+                </td>
+                <td> 
+                    <progress min="0" max="100" value="50" id="health"></progress>
+                </td>
+            </tr>
+        </table>
+
+        <u><h3><img src="images/educacion.png"> Contacto </h3></u>
+        
+        <div class="container">
+            <form>
+          
+              <label for="fname">Nombre</label>
+              <input type="text" id="fname" name="firstname" placeholder="Tu nombre..">
+          
+              <label for="lname">Apellido</label>
+              <input type="text" id="lname" name="lastname" placeholder="Tu apellido..">
+          
+              <label for="country">Pais</label>
+              <select id="country" name="country">
+                <option value="australia">Argentina</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+          
+              <label for="subject">Motivo</label>
+              <textarea id="subject" name="subject" placeholder="Escribe algo.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Enviar" onclick="enviar()">
+            </form>
+          </div>
+    </body>
+</html>
